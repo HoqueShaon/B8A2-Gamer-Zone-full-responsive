@@ -4,7 +4,7 @@ body{
     margin: 0 auto;
 }
 *{
-    font-family: "wok-sans", sans-serif;
+    font-family: "work sans", sans-serif;
 }
 
 /* Header section */
@@ -70,6 +70,9 @@ nav li a{
     align-items: center;
     display: flex;
 }
+.banner-1{
+background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241, 68, 174, 0.025) 100.56%);
+}
 .banner-1 h3{
     font-size: 48px;
     font-weight: 600;
@@ -94,8 +97,8 @@ nav li a{
 }
 .primary-btn{
     font-size: 20px;
-    font-weight: 600;
-    padding: 20px 40px;
+    font-weight: 500;
+    padding: 15px 30px;
     gap: 10px;
     border: none;
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
@@ -106,12 +109,72 @@ nav li a{
 .primary-btn:hover{
     font-size: 20px;
     font-weight: 500;
-    padding: 20px 40px;
+    padding: 15px 30px;
     gap: 10px;
     border: none;
     background: linear-gradient(90deg, #4EC5F7 13.13%, #4EC5F7 87.94%);
     border-radius: 48px;
     color: #fff;
+}
+
+/* BAnner 2 */
+.banner-2{
+    display: flex;
+    gap: 120px;
+    width: 75%;
+    margin-top: 40px;
+}
+.banner-2-description{
+    text-align: right;
+background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241, 68, 174, 0.025) 100.56%);
+
+}
+.banner-2-title{
+    font-weight: 700;
+    font-size: 48px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.international{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #534C64;
+    margin-bottom: 25px;
+}
+.secondary-btn{
+    font-size: 16px;
+    font-weight: 550;
+    padding: 15px 25px;
+    gap: 10px;
+    border: none;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    border-radius: 48px;
+    color: #fff;
+}
+.secondary-btn:hover{
+    font-size: 16px;
+    font-weight: 550;
+    padding: 15px 25px;
+    gap: 10px;
+    border: none;
+    background: linear-gradient(90deg, #4EC5F7 13.13%, #4EC5F7 87.94%);
+    border-radius: 48px;
+    color: #fff;
+}
+.purpose{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: right;
+    color: #534C64;
+    margin-bottom: -15px;
+}
+.unleash{
+    font-weight: 700;
+    font-size: 32px;
+    color: #534C64;
 }
 
 /* Responsive of mobile devices */
@@ -174,4 +237,24 @@ nav li a{
         justify-content: center;
         align-items: center;
     }
+    .banner-2{
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 20px;
+    }
+    .banner-2-img{
+        width: 100%;
+    }
+    .banner-2-img img{
+        width: 100%;
+    }
+    .banner-2-description,
+    .banner-2-title,
+    .international,
+    .purpose,
+    .unleash{
+        justify-content: center;
+        text-align: center;   
+    }
+    
 }
