@@ -1,89 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-    margin: 0 auto;
-}
-*{
+body {
+    margin: 0;
+    padding: 0;
     font-family: "work sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Header section */
 
-.logo{
-    display: flex;
-}
-.logo-img{
+header {
     width: 100%;
-    padding: 50px 0px ;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 100px; /* Adjust size as needed */
     margin-right: 10px;
 }
-.g-color{
+
+.g-color {
     color: #FF42A5;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
-.logo-title{
+
+.logo-title {
     font-size: 45px;
     font-weight: 700;
 }
-nav > ul{
+
+nav > ul {
     display: flex;
-    padding: 40px;
     justify-content: center;
     align-items: center;
-}
-nav  li{
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+nav li {
     margin-right: 30px;
     font-size: 18px;
     font-weight: 500;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #3C354F;
 }
-.nav-icons{
+
+.nav-icons {
     display: flex;
-    height: 50px;
-    justify-content: center;
     align-items: center;
-    padding:0 10px;
+    padding: 15px 10px;
     background: rgba(11, 2, 35, 0.1);
-    border-radius: 8px;
-    
+    border-radius: 20px;
 }
-.folow{
-    padding-left: 20px ;
+
+.folow {
+    padding-left: 20px;
 }
-.fa-youtube{
+
+.fa-youtube {
     color: red;
 }
 
-/* banner section starts here*/
+/* Banner section starts here*/
 
-.banner{
+.banner {
     width: 100%;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    display: flex;
+ 
+    margin: 0 auto;
+    max-width: 1200px;
 }
-.banner-1{
-background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241, 68, 174, 0.025) 100.56%);
+
+.banner-1 {
+    background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241, 68, 174, 0.025) 100.56%);
+    text-align: center;
+
+    padding: 20px;
 }
-.banner-1 h3{
+
+.banner-1 h3 {
     font-size: 48px;
     font-weight: 600;
-    text-align: center;
     margin: 0;
 }
-.banner-1 h1{
+
+.banner-1 h1 {
     font-weight: 800;
     font-size: 95px;
-    text-align: center;
     text-transform: uppercase;
     margin: 0;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -91,141 +114,161 @@ background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241,
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.banner-description{
+
+.banner-description {
     font-weight: 500;
     font-size: 20px;
     color: #534C64;
+    margin: 20px 0;
 }
-.primary-btn{
+
+.primary-btn {
     font-size: 20px;
     font-weight: 500;
     padding: 15px 30px;
-    gap: 10px;
     border: none;
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
     border-radius: 48px;
     color: #fff;
     margin-right: 20px;
+    cursor: pointer;
 }
-.primary-btn:hover{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 15px 30px;
-    gap: 10px;
-    border: none;
+
+.primary-btn:hover {
     background: linear-gradient(90deg, #4EC5F7 13.13%, #4EC5F7 87.94%);
-    border-radius: 48px;
-    color: #fff;
 }
 
-/* BAnner 2 */
-.banner-2{
+.banner-1-img {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    width: 75%;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
 }
-.banner-2-description{
-    text-align: right;
-background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241, 68, 174, 0.025) 100.56%);
 
+.banner-1-img img {
+    max-width: 100%;
+    height: auto;
 }
-.banner-2-title{
+
+/* Banner 2 */
+
+.banner-2 {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px auto ;
+    max-width: 1200px;
+}
+.banner-2-img{
+    width: 100%;
+    height: 100%;
+}
+.banner-2-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-2-description {
+    width: 75%;
+    background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241, 68, 174, 0.025) 100.56%);
+text-align: right;
+}
+
+.banner-2-title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 40px;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.international{
+
+.international {
     font-weight: 400;
     font-size: 18px;
-    text-align: right;
     color: #534C64;
     margin-bottom: 25px;
 }
-.secondary-btn{
+
+.secondary-btn {
     font-size: 16px;
     font-weight: 550;
     padding: 15px 25px;
-    gap: 10px;
     border: none;
     background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
     border-radius: 48px;
     color: #fff;
+    cursor: pointer;
 }
-.secondary-btn:hover{
-    font-size: 16px;
-    font-weight: 550;
-    padding: 15px 25px;
-    gap: 10px;
-    border: none;
+
+.secondary-btn:hover {
     background: linear-gradient(90deg, #4EC5F7 13.13%, #4EC5F7 87.94%);
-    border-radius: 48px;
-    color: #fff;
 }
-.purpose{
+
+.purpose {
     font-weight: 500;
     font-size: 24px;
-    text-align: right;
     color: #534C64;
     margin-bottom: -15px;
 }
-.unleash{
+
+.unleash {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
     color: #534C64;
 }
 
 /* Online Games section starts here */
 
-.banner-3{
+.banner-3 {
     width: 100%;
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
 }
-.online-games-banner{
+
+.online-games-banner {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-
+    margin: 0 auto;
+    max-width: 1200px;
 }
-.online-title{
+
+.online-title {
     font-weight: 700;
     font-size: 48px;
-    text-align: center;
     color: #0B0223;
     margin-bottom: 20px;
 }
-.Fun-vids{
+
+.Fun-vids {
     font-weight: 700;
     font-size: 48px;
-    text-align: right;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.online-desc{
+
+.online-desc {
     font-weight: 400;
     font-size: 18px;
-    text-align: center;
     color: #534C64;
     margin-bottom: 30px;
 }
-.card{
+
+.card {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
     margin-top: 20px;
 }
+
 .card-1 {
     position: relative;
-    width: 20%;
-    height: auto; /* Ensure the card maintains its aspect ratio */
+    width: 100%;
     text-align: center;
     overflow: hidden;
 }
@@ -242,7 +285,7 @@ background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241,
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 74%;
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.3);
     color: white;
@@ -253,6 +296,7 @@ background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241,
     transition: opacity 0.3s ease;
     pointer-events: none; /* Ensures overlay does not affect hover state */
 }
+
 .card-1 .overlay i {
     font-size: 50px;
 }
@@ -265,110 +309,130 @@ background: linear-gradient(235.41deg, rgba(140, 87, 238, 0.025) 3.9%, rgba(241,
     opacity: 1;
     pointer-events: auto; /* Enables interaction with overlay when visible */
 }
-.overlay{
+
+.overlay {
     display: flex;
     flex-direction: column;
 }
-.last-p{
-font-weight: 500;
-font-size: 20px;
-color: #534C64;
-text-align: start;
-padding-left: 5px;
+
+.last-p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #534C64;
+    text-align: start;
+    padding-left: 5px;
 }
 
+/* Responsive for mobile devices */
 
-
-/* Responsive of mobile devices */
-
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     body, html {
         width: 100%;
+        justify-content: center;
+        align-items: center;
         overflow-x: hidden; /* Prevent horizontal scrollbar */
     }
-    .logo{
+
+    .logo {
         flex-direction: row;
-        padding: auto;
+        padding: 5px;
         justify-content: center;
         align-items: center;
     }
-    nav ,
-    nav > ul{
+
+    nav,
+    nav > ul {
         flex-direction: column;
     }
-    nav > ul{
+
+    nav > ul {
         margin-left: 0;
-        padding: 0 ;
+        padding: 0;
     }
-    .nav-icons{
+
+    .nav-icons {
         margin-top: 20px;
     }
 
     .banner,
-    .online-games-banner{
+    .online-games-banner {
         flex-direction: column-reverse;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
-    .banner-1-img{
+
+    .banner-1-img {
         width: 85%;
         justify-content: center;
         align-items: center;
     }
-    .banner-1-img img{
+
+    .banner-1-img img {
         width: 100%;
         justify-content: center;
-
     }
-    .banner-1 h1 ,
-    .banner-1 h3{
+
+    .banner-1 h1,
+    .banner-1 h3 {
         margin: 0;
         font-size: 40px;
         padding: 0;
     }
-    .button{
-        display: flex; 
+
+    .button {
+        display: flex;
         justify-content: center;
-        align-items: center; 
-        width: 100%; 
+        align-items: center;
+        width: 100%;
     }
-    .primary-btn{
+
+    .primary-btn {
         font-size: 16px;
         font-weight: 500;
-        padding:10px 20px;
+        padding: 10px 20px;
         margin: 10px;
         justify-content: center;
         align-items: center;
     }
-    .banner-2{
+
+    .banner-2 {
         flex-direction: column;
         gap: 0px;
-        margin-top: 20px;
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
     }
-    .banner-2-img{
+
+    .banner-2-img {
         width: 100%;
     }
-    .banner-2-img img{
+
+    .banner-2-img img {
         width: 100%;
         height: 100%;
     }
+
     .banner-2-description,
     .banner-2-title,
     .international,
     .purpose,
-    .unleash{
+    .unleash {
         justify-content: center;
-        text-align: center;   
+        text-align: center;
     }
-    .card{
+
+    .card {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
-    .card-1{
-        width: 100%;
+
+    .card-1 {
+        width: 90%;
     }
-    .card-1 .overlay{
-        height: 87%;
+
+    .card-1 .overlay {
+        height: 80%;
     }
 }
